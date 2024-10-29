@@ -1,0 +1,15 @@
+{
+    "extends": "./tsconfig.json", // ou o caminho correto para o seu tsconfig base
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "types": ["cypress"],
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+        "cypress/**/*.ts" // Inclua seu diretório de testes
+    ]
+}
